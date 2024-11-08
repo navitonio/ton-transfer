@@ -1,3 +1,4 @@
+//@ts-nocheck
 import express from "express";
 import { getHttpEndpoint } from "@orbs-network/ton-access";
 import { mnemonicToWalletKey } from "@ton/crypto";

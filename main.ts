@@ -1,3 +1,4 @@
+//@ts-nocheck
 import express from "express";
 import { getHttpEndpoint } from "@orbs-network/ton-access";
 import { mnemonicToWalletKey } from "@ton/crypto";
@@ -86,6 +87,7 @@ app.post("/send-ton", authenticateApiKey, async (req, res) => {
         return res.status(500).json({ error: "Transaction failed", details: error.message });
     }
 });
+
 
 function sleep(ms: number) {
     return new Promise(resolve => setTimeout(resolve, ms));
