@@ -1,0 +1,25 @@
+{
+  "name": "ton-transfer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "type": "commonjs",
+  "license": "ISC",
+  "dependencies": {
+    "@orbs-network/ton-access": "^2.3.3",
+    "@ton/core": "^0.59.0",
+    "@ton/crypto": "^3.3.0",
+    "@ton/ton": "^15.1.0",
+    "axios": "^1.7.7",
+    "bn.js": "^5.2.1",
+    "express": "^4.21.1",
+    "ton-crypto": "latest",
+    "tonweb": "^0.0.66",
+    "ts-node": "^10.9.2"
+  }
+}
