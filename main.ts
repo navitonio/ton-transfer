@@ -93,7 +93,7 @@ function sleep(ms: number) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-const PORT = process.env.PORT || 3003;
+const PORT = process.env.PORT || 3000;
 initializeWallet().then(() => {
     app.listen(PORT, () => {
         console.log(`Server running on http://localhost:${PORT}`);
