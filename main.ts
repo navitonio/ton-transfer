@@ -113,7 +113,7 @@ app.post("/send-ton", authenticateApiKey, async (req, res) => {
         // Returnăm imediat răspunsul cu ID-ul tranzacției
         const transactionLink = `https://tonscan.org/address/${walletContract.address.toString()}`;
         return res.json({
-            status: "Transaction submitted",
+            status: 'success',
             txId: txId,
             transactionLink: transactionLink
         });
